@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heatmap Chart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css"> 
+    <!-- d3.js link -->
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- d3-tip package -->
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="home">Heading</h1>
+      <nav id="sidebar">
+          <!-- Sidebar Links -->
+          <h3>STATS</h3>
+          <ul class="list-unstyled components" id="stats">
+            <li>
+              <a href='#instances' data-toggle='collapse' aria-expanded='false'>FSL</a>
+              <ul class="collapse list-unstyled" id="instances"></ul>
+            </li>
+          </ul>     
+      </nav>
+    </div>
+    <div id="chart">
+    </div>
+    <div id="chart-details">
+      <h4>Grid Information</h4><br>
+      <form>
+        <label>Instance Name: <span id="ins_val">FSL_Instance_1</span></label><br>
+        <label>Profile Name: <span id="pro_val">Profile_1</span></label><br>
+        <label>Interface Name: <span id="interface_val">DATA_Bus Passthru</span></label><br>
+        <label>Floor Number : <span id="floor_no">0</span></label><br>
+        <label>Half Floor Number : <span id="half_floor_no">1</span></label><br>
+        <label>Availabilty: </label>
+      </form>
+      <div id="myChart"></div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
