@@ -30,6 +30,15 @@
               <a href='#instances' data-toggle='collapse' aria-expanded='false'>FSL</a>
               <ul class="collapse list-unstyled" id="instances"></ul>
             </li>
+            <li>
+              <a href='#component' data-toggle='collapse' aria-expanded='false'>BUS</a>
+              <ul class="collapse list-unstyled" id="component">
+                <li><a id="bus" href="#">Total Utilization</a></li>
+                <li><a id="Command" href="#" onclick="busHeatChart(this.id)">Command</a></li>
+                <li><a id="Object"href="#" onclick="busHeatChart(this.id)">Object</a></li>
+                <li><a id="Field" href="#" onclick="busHeatChart(this.id)">Field</a></li>
+              </ul>
+            </li>
           </ul>     
       </nav>
     </div>
@@ -46,7 +55,6 @@
         <label>Availabilty: </label>
       </form>
       <div id="myChart"></div>
-      
     </div>
     <script src="script.js"></script>
   </body>
