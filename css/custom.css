@@ -42,7 +42,6 @@ body {
   position: relative;
   margin-left: 950px;
   text-align: left;
-  font-variant: small-caps;
   padding: 30px;
   top: 130px;
 }
@@ -101,7 +100,7 @@ a[aria-expanded="true"]::before {
     content: '\e260';
 }
 rect.bordered {
-  stroke: #eee;
+  stroke: #aaa;
   stroke-width:3px;   
 }
 text.mono {
